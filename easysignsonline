@@ -1,0 +1,24 @@
+#!/bin/bash
+function run-chrome {
+    google-chrome --no-first-run --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --start-maximized  --kiosk $1 
+}
+if [ -f $CLASSFILE ] ;
+then
+    . ./config.properties
+fi
+
+if [ $rotate == "left" -o $rotate == "right" -o $rotate == "inverted" ] ;
+then
+    xrandr -o $rotate
+fi
+
+run-chrome $url
+
+while true
+do
+    sleep 15
+    if ! pgrep -f "chrom*" > /dev/null
+    then
+        run-chrome $url
+    fi
+done
