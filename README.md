@@ -13,5 +13,5 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 ```
 wget https://easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
-./configure-kiosk-sign.sh userName browserUrl
+./configure-kiosk-sign.sh userName browserUrl { normal | left | right | inverted }
 ```
