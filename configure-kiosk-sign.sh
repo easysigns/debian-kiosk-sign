@@ -3,7 +3,6 @@ USER=$1
 ESOHOME=/usr/share/easysignsonline
 SYSBIN=/usr/bin
 DIRECTORY=/tmp/easysignsonline-install
-CLASSFILE=/tmp/easysignsonline-install/EasySignsOnline.class
 SCRIPTFILE=/tmp/easysignsonline-install/easysignsonline
 OPENBOXDIR=/home/$USER/.config/openbox/
 ARCHITECTURE=`dpkg --print-architecture`
