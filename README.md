@@ -1,5 +1,5 @@
 # debian-9-kiosk-sign
-Script that automatically configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with unattended updates and fail2ban 
+Script that automatically configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with chrome (or chromium) unattended updates, sshd and fail2ban 
 
 ## Install Debian 9 minimal ISO from bootable USB drive
 * Create a bootable USB drive 
