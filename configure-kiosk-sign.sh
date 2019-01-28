@@ -18,11 +18,6 @@ fi
 mkdir -p $DIRECTORY
 cd $DIRECTORY
 
-if [ ! -f $CLASSFILE ]
-then
-  wget https://easysigns.online/EasySignsOnline.class
-fi 
-
 if [ ! -f $SCRIPTFILE ]
 then
   wget https://easysigns.online/easysignsonline
@@ -32,7 +27,7 @@ fi
 if [ $ARCHITECTURE = "amd64" ]; then
   echo AMD64
   apt-get update
-  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges openjdk-8-jre fail2ban
+  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges fail2ban
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
   echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list
   apt-get update
@@ -40,7 +35,7 @@ if [ $ARCHITECTURE = "amd64" ]; then
 else
   echo not AMD64
   apt-get update
-  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges openjdk-8-jre chromium fail2ban
+  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges chromium fail2ban
   ln -s /usr/bin/chromium /usr/bin/google-chrome
 fi
 
@@ -72,7 +67,6 @@ echo $USER '  ALL=(ALL:ALL) ALL' >> /etc/sudoers
 
 # Easy Signs Online
 mkdir -p $ESOHOME
-cp $CLASSFILE $ESOHOME
 cp $SCRIPTFILE $SYSBIN/easysignsonline
 chmod ugo+x $SYSBIN/easysignsonline
 
@@ -80,8 +74,13 @@ chmod ugo+x $SYSBIN/easysignsonline
 if [ ! -z "$2" ]
 then
   rm -rf $ESOHOME/config.properties
-  echo "#"`date` >> $ESOHOME/config.properties
   echo "url="$2 | sed 's/:/\\:/g' >> $ESOHOME/config.properties
+fi
+
+if [ ! -z "$3" ]
+then
+  rm -rf $ESOHOME/config.properties
+  echo "rotate="$3 >> $ESOHOME/config.properties
 fi
 
 # Reboot
