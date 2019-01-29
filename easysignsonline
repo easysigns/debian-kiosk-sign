@@ -1,10 +1,13 @@
 #!/bin/bash
+CONFIGFILE=/usr/share/easysignsonline/config.properties
 function run-chrome {
     google-chrome --no-first-run --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --start-maximized  --kiosk $1 
 }
-if [ -f $CLASSFILE ] ;
+if [ -f $CONFIGFILE ] ;
 then
-    . ./config.properties
+    . $CONFIGFILE
+else
+    exit
 fi
 
 if [ $rotate == "left" -o $rotate == "right" -o $rotate == "inverted" ] ;
