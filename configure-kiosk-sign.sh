@@ -19,7 +19,7 @@ cd $DIRECTORY
 
 if [ ! -f $SCRIPTFILE ]
 then
-  wget https://easysigns.online/easysignsonline
+  wget http://go.easysigns.online/easysignsonline
 fi
 
 # Update and load system
