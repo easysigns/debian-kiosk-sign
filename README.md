@@ -7,7 +7,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 * Insert USB drive into computer
 * Enter BIOS and select boot from USB
 * On Language Selection Screen remove USB drive 
-* Partions select Guided entire hard drive
+* Partitions: select Guided entire hard drive
 * Set root password, create user, set timezone.
 * Under Software Selection uncheck all software.
 * Once the installation is finished login as root
@@ -16,9 +16,10 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 ```
 wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
-# configure-kiosk-sign.sh user url rotation
-./configure-kiosk-sign.sh easysigns https://easysigns.online/v/123456790987654321 inverted
+./configure-kiosk-sign.sh easysigns https://easysigns.online/v/123456790987654321 normal
 ```
+./configure-kiosk-sign.sh user url rotation 
+  
 user created during install  
 url is what to be displayed in browser  
 rotation rotates screen (optional): normal, left, right, inverted  
