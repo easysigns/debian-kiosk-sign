@@ -25,3 +25,6 @@ screenRotation is optional: normal, left, right, inverted.
   
 When done, system will reboot.  
 Upon startup system logs in as user and displays url in browser full screen.
+  
+The file /usr/share/easysignsonline/config.properties contains properties url and rotate.
+
