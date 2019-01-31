@@ -78,7 +78,6 @@ fi
 
 if [ ! -z "$3" ]
 then
-  rm -rf $ESOHOME/config.properties
   echo "rotate="$3 >> $ESOHOME/config.properties
 fi
 
