@@ -16,9 +16,9 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
 # configure-kiosk-sign.sh userName browserUrl screenRotation
-./configure-kiosk-sign.sh easysigns http://yoursite.com screenRotation
+./configure-kiosk-sign.sh easysigns http://yoursite.com inverted
 ```
-userName is the user created during install.  
+userName for the user created during install.  
 browserUrl is what will be displayed in browser.  
 screenRotation is optional: normal, left, right, or inverted.  
   
