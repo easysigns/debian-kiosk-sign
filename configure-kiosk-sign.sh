@@ -26,7 +26,7 @@ fi
 if [ $ARCHITECTURE = "amd64" ]; then
   echo AMD64
   apt-get update
-  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges fail2ban
+  apt-get -y install xorg openbox lightdm ca-certificates sudo openssh-server unattended-upgrades apt-listchanges fail2ban
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
   echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list
   apt-get update
@@ -34,7 +34,7 @@ if [ $ARCHITECTURE = "amd64" ]; then
 else
   echo not AMD64
   apt-get update
-  apt-get -y install xorg openbox lightdm sudo openssh-server unattended-upgrades apt-listchanges chromium fail2ban
+  apt-get -y install xorg openbox lightdm ca-certificates sudo openssh-server unattended-upgrades apt-listchanges chromium fail2ban
   ln -s /usr/bin/chromium /usr/bin/google-chrome
 fi
 
