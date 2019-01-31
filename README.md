@@ -21,7 +21,7 @@ chmod u+x configure-kiosk-sign.sh
 ```
 userName for the user created during install.  
 browserUrl is what will be displayed in browser.  
-screenRotation is optional: normal, left, right, or inverted.  
+screenRotation is optional: normal, left, right, inverted.  
   
 When done, system will reboot.  
 Upon startup system logs in as user and displays url in browser full screen.
