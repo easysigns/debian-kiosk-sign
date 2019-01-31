@@ -16,9 +16,9 @@ wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
 ./configure-kiosk-sign.sh userName browserUrl screenRotation
 ```
-userName has to be of the user created during install
-browserUrl is what's to be shown in chrome
-screenRotation must be normal, left, right, inverted
-
-When done, system will reboot. 
+userName has to be of the user created during install  
+browserUrl is what's to be shown in chrome  
+screenRotation must be normal, left, right, inverted  
+  
+When done, system will reboot.  
 Upon startup systems log in as user and displays url in browser full screen.
