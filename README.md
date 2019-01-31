@@ -7,7 +7,8 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 * Insert USB drive into computer
 * Enter BIOS and select boot from USB
 * On Language Selection Screen remove USB drive 
-* Set root password, create user with userName, set timezone.
+* Partions select Guided entire hard drive
+* Set root password, create user, set timezone.
 * Under Software Selection uncheck all software.
 * Once the installation is finished login as root
 * Download and run configure script by typing...
