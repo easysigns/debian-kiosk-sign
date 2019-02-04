@@ -24,7 +24,7 @@ user created during install
 url is what to be displayed in browser  
 rotation rotates screen (optional): normal, left, right, inverted  
   
-When configure script is done, the system will reboot.  
+When configure script is finished, the system will reboot.  
 Upon startup, the system logs in as user and displays url in browser full screen.
   
 The file /usr/share/easysignsonline/config.properties contains properties url and rotate.
