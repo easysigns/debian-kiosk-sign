@@ -5,7 +5,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 * Follow instructions https://wiki.debian.org/RaspberryPi3
 * Log in as root
 * Create user by typing: adduser easysigns
-* Download and run configure-kiosk-sign.sh (see below)
+* Download and run configure-kiosk-sign.sh script (see below)
 
 ## For Debian 9 minimal ISO Install from bootable USB drive
 * Download netboot mini.iso from Debian around 40mb
@@ -17,7 +17,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 * Set root password, create user, set timezone.
 * Under Software Selection uncheck all software.
 * Once the installation is finished login as root
-* Download and run configure script by typing...
+* Download and run configure-kiosk-sign.sh script by typing...
 
 ```
 wget http://go.easysigns.online/configure-kiosk-sign.sh
