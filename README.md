@@ -1,7 +1,13 @@
 # debian-9-kiosk-sign
 Script that automatically configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with chrome (else chromium), unattended updates, sshd and fail2ban 
 
-## Install Debian 9 minimal ISO from bootable USB drive
+## For Raspberry Pi 3 Debian Install
+* Follow instructions https://wiki.debian.org/RaspberryPi3
+* Log in as root
+* Create user by typing: adduser easysigns
+* Download and run configure-kiosk-sign.sh (see below)
+
+## For Debian 9 minimal ISO Install from bootable USB drive
 * Download netboot mini.iso from Debian around 40mb
 * Create a bootable USB drive
 * Insert USB drive into computer
