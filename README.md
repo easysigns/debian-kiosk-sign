@@ -8,7 +8,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 * Download and run configure-kiosk-sign.sh script (see below)
 
 ## For Debian 9 minimal ISO Install from bootable USB drive
-* Download tiny netboot mini.iso from Debian around 40mb https://www.debian.org/distrib/netinst
+* Download Debian OS tiny netboot mini.iso https://www.debian.org/distrib/netinst
 * Create a bootable USB drive
 * Insert USB drive into computer
 * Enter BIOS and select boot from USB
