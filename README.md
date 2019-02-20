@@ -26,7 +26,7 @@ chmod u+x configure-kiosk-sign.sh
 ```
 ./configure-kiosk-sign.sh user url rotation 
   
-user created during install  
+user created during install. The user to be logged in to launch full screen chrome.  
 url is what to be displayed in browser  
 rotation rotates screen (optional): normal, left, right, inverted  
   
