@@ -1,7 +1,7 @@
 #!/bin/bash
 CONFIGFILE=/usr/share/easysignsonline/config.properties
 function run-chrome {
-    google-chrome --no-first-run --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --start-maximized  --kiosk $1 
+    google-chrome --no-first-run --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --start-maximized  --kiosk --app=$1 
 }
 if [ -f $CONFIGFILE ] ;
 then
