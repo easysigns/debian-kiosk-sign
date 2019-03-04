@@ -21,7 +21,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 ```
 wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
-./configure-kiosk-sign.sh easysigns https://easysigns.online/v/123456790987654321 normal
+sudo ./configure-kiosk-sign.sh easysigns https://easysigns.online/v/123456790987654321 normal
 ```
 sudo ./configure-kiosk-sign.sh user url rotation 
   
