@@ -1,10 +1,9 @@
 # debian-9-kiosk-sign
 Script that automatically configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with chrome (else chromium), screen rotation, unattended updates, sshd and fail2ban 
 
-## For Raspberry Pi 3 Debian Install
-* Follow instructions https://wiki.debian.org/RaspberryPi3
-* Log in as root
-* Create user by typing: adduser easysigns
+## For Raspberry Pi 3 Raspbian Install
+* Follow instructions https://www.raspberrypi.org/downloads/raspbian/ minimal install
+* Log in as pi
 * Download and run configure-kiosk-sign.sh script (see below)
 
 ## For Debian 9 minimal ISO Install from bootable USB drive
@@ -24,7 +23,7 @@ wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
 ./configure-kiosk-sign.sh easysigns https://easysigns.online/v/123456790987654321 normal
 ```
-./configure-kiosk-sign.sh user url rotation 
+sudo ./configure-kiosk-sign.sh user url rotation 
   
 user created during install. The user to be logged in to launch full screen chrome.  
 url is what to be displayed in browser  
