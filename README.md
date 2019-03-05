@@ -4,6 +4,7 @@ Script that automatically configures a locked-down debian 9 kiosk or digital sig
 ## For Raspberry Pi 3 Raspbian Install
 * Follow instructions https://www.raspberrypi.org/downloads/raspbian/ minimal install
 * Log in as pi
+* Type: sudo adduser easysigns
 * Download and run configure-kiosk-sign.sh script (see below)
 
 ## For Debian 9 minimal ISO Install from bootable USB drive
