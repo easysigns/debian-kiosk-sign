@@ -38,6 +38,9 @@ else
   ln -s /usr/bin/chromium-browser /usr/bin/google-chrome
 fi
 
+# Enable ssh server at boot
+systemctl enable ssh
+
 # Make user autologin
 sed -i "/#autologin-user=/s/.*/autologin-user=$USER/" /etc/lightdm/lightdm.conf
 
