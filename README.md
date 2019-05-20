@@ -1,5 +1,5 @@
 # debian-9-kiosk-sign
-Script that automatically configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with chrome (else chromium), screen rotation, unattended updates, sshd and fail2ban 
+This script configures a locked-down debian 9 kiosk or digital sign single full screen browser application from minimal iso with chrome (else chromium), screen rotation, unattended updates, sshd and fail2ban 
 
 ## For Raspberry Pi 3 Raspbian Install
 * Follow instructions https://www.raspberrypi.org/downloads/raspbian/ minimal install
