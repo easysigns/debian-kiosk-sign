@@ -34,7 +34,7 @@ if [ $ARCHITECTURE = "amd64" ]; then
 else
   echo not AMD64
   apt-get update
-  apt-get -y install xorg openbox lightdm ca-certificates sudo openssh-server unattended-upgrades apt-listchanges chromium-browser fail2ban
+  apt-get -y install xorg openbox lightdm ca-certificates sudo openssh-server unattended-upgrades apt-listchanges chromium-browser fail2ban unclutter
   ln -s /usr/bin/chromium-browser /usr/bin/google-chrome
 fi
 
