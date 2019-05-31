@@ -19,6 +19,7 @@ This script configures a locked-down Debian 9 (or Raspbian) kiosk or digital sig
 * Once the installation is finished login as root
 * Download and run configure-kiosk-sign.sh script by typing...
 
+## Download and run configure script
 ```
 wget http://go.easysigns.online/configure-kiosk-sign.sh
 chmod u+x configure-kiosk-sign.sh
