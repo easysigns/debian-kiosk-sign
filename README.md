@@ -17,7 +17,7 @@ This script configures a locked-down Debian 9 (or Raspbian) kiosk or digital sig
 * Set root password, create user, set timezone.
 * Under Software Selection uncheck all software.
 * Once the installation is finished login as root
-* Download and run configure-kiosk-sign.sh script by typing...
+* Download and run configure-kiosk-sign.sh script
 
 ## Download and run configure script
 ```
