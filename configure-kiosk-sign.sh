@@ -28,7 +28,7 @@ if [ $ARCHITECTURE = "amd64" ]; then
   apt-get update
   apt-get -y install xorg openbox lightdm ca-certificates sudo openssh-server unattended-upgrades apt-listchanges fail2ban unclutter
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  apt install ./google-chrome-stable_current_amd64.deb
+  apt -y install ./google-chrome-stable_current_amd64.deb
 else
   echo not AMD64
   apt-get update
