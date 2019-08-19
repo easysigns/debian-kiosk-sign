@@ -15,7 +15,7 @@ This script configures a locked-down Debian (or Raspbian) kiosk or digital sign 
 * On Language Selection Screen remove USB drive 
 * Partitions: select Guided entire hard drive
 * Set root password, create user, set timezone.
-* Under Software Selection uncheck all software.
+* Under Software Selection check only 'standard system utilities'
 * Once the installation is finished login as root
 * Download and run configure-kiosk-sign.sh script
 
