@@ -7,7 +7,7 @@ This script configures a locked-down Debian (or Raspbian) kiosk or digital sign 
 * Type: sudo adduser easysigns
 * Download and run configure-kiosk-sign.sh script (see below)
 
-## For Debian 9 minimal ISO Install from bootable USB drive
+## For Debian minimal ISO Install from bootable USB drive
 * Download Debian OS tiny netboot mini.iso https://www.debian.org/distrib/netinst
 * Create a bootable USB drive
 * Insert USB drive into computer
