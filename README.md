@@ -5,6 +5,7 @@ This script configures a locked-down Debian (or Raspbian) kiosk or digital sign 
 * Follow instructions https://www.raspberrypi.org/downloads/raspbian/ minimal install
 * Log in as pi
 * Type: sudo adduser easysigns
+* To configure wireless internet Type: sudo raspi-config
 * Download and run configure-kiosk-sign.sh script (see below)
 
 ## For Debian minimal ISO Install from bootable USB drive
